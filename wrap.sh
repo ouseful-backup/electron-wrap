@@ -13,8 +13,8 @@ else
   echo ""
   echo "Copying files..."
   echo ""
-  curl -O https://raw.githubusercontent.com/thmsbfft/electron-wrap/master/package.json
-  curl -O https://raw.githubusercontent.com/thmsbfft/electron-wrap/master/index-electron-wrap.js
+  curl -O https://raw.githubusercontent.com/ouseful-backup/electron-wrap/master/package.json
+  curl -O https://raw.githubusercontent.com/ouseful-backup/electron-wrap/master/index-electron-wrap.js
 
   # replace values
   sed -i '' "s/name-electron-wrap/$name/" package.json
@@ -27,7 +27,7 @@ else
       sed -i '' "s/icon-electron-wrap.icns/icon.icns/" package.json
   else
       echo "Icon not found!"
-      curl -O https://raw.githubusercontent.com/thmsbfft/electron-wrap/master/icon-electron-wrap.icns
+      curl -O https://raw.githubusercontent.com/ouseful-backup/electron-wrap/master/icon-electron-wrap.icns
   fi
   
   # install dependencies
