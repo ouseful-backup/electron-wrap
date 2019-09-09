@@ -5,10 +5,24 @@ then
     exit
 else
   # get parameters
-  read -p "Project name: " name
-  read -p "Window width: " width
-  read -p "Window height: " height
+  #read -p "Project name: " name
+  #read -p "Window width: " width
+  #read -p "Window height: " height
+  
+  name="electronTest"
+  width=800
+  height=600
 
+
+  # parameters from command line
+  #while getopts n:w:h: option; do
+  #      case "${option}" in
+  #              u) name=${OPTARG};;
+  #              w) width=${OPTARG};;
+  #              h) height=${OPTARG};;
+  #      esac
+  #  done
+  
   # copy files
   echo ""
   echo "Copying files..."
@@ -48,5 +62,6 @@ else
   rm index-electron-wrap.js
   rm icon-electron-wrap.icns
 
-  osascript -e 'display notification "Electron wrap is done." with title "Finished!"'
+  #Suppress Mac completion alert
+  #osascript -e 'display notification "Electron wrap is done." with title "Finished!"'
 fi
