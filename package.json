@@ -5,7 +5,7 @@
   "main": "index-electron-wrap.js",
   "scripts": {
     "start": "electron .",
-    "package": "electron-packager . --overwrite --prune --out=build --all --icon=icon-electron-wrap.icns"
+    "package": "electron-packager . --overwrite --prune --out=build --platform=darwin --arch=x64 --icon=icon-electron-wrap.icns"
   },
   "author": "thmsbfft",
   "license": "MIT"
