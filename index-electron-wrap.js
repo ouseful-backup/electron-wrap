@@ -25,14 +25,14 @@ function open () {
   let bw_options = {
     width: WINDOW_WIDTH ? WINDOW_WIDTH : 412,
     height: WINDOW_HEIGHT ? WINDOW_HEIGHT : 870,
-    resizable: false
+    resizable: true
   }
 
   w = new BrowserWindow(
     bw_options
   )
 
-  w.setResizable(false)
+  w.setResizable(true)
 
   w.loadURL(url.format({
     pathname: 'localhost' + ':' + port,
